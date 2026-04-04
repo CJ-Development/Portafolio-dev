@@ -3,7 +3,7 @@ import '../Estilos/CVButton.css';
 export default function CVButton() {
   return (
     <a
-      href="/CV-Jhon-Cortes.pdf"
+      href="/Curriculum_Jhon_Cortes.pdf"
       download
       className="cv-fab"
       title="Descargar CV"
