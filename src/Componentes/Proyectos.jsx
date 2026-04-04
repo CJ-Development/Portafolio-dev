@@ -12,7 +12,7 @@ const proyectos = [
   {
     id: 2,
     nombre: 'Proyecto 2',
-    descripcion: 'Descripción breve de tu próximo proyecto. Puedes actualizar esta tarjeta cuando lo tengas listo.',
+    descripcion: 'Proximamente proyecto colegios / Factus.',
     tecnologias: ['React', 'CSS'],
     link: '#',
     repo: '#',
