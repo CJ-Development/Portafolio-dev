@@ -3,7 +3,7 @@ import '../Estilos/CVButton.css';
 export default function CVButton() {
   return (
     <a
-      href="src\Descargables\Curriculum Jhon Jairo Cortes Sarmiento - ADSO.pdf"
+      href="/CV-Jhon-Cortes.pdf"
       download
       className="cv-fab"
       title="Descargar CV"
