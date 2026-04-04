@@ -11,15 +11,7 @@ const proyectos = [
   },
   {
     id: 2,
-    nombre: 'Portafolio Dev',
-    descripcion: 'Portafolio personal desarrollado con React + Vite. Incluye fondo animado con Vanta.js y modo claro/oscuro.',
-    tecnologias: ['React', 'Vite', 'Vanta.js'],
-    link: '#',
-    repo: 'https://github.com/CJ-Development/Portafolio-dev',
-  },
-  {
-    id: 3,
-    nombre: 'Proyecto 3',
+    nombre: 'Proyecto 2',
     descripcion: 'Descripción breve de tu próximo proyecto. Puedes actualizar esta tarjeta cuando lo tengas listo.',
     tecnologias: ['React', 'CSS'],
     link: '#',

@@ -30,9 +30,7 @@ export default function SobreMi() {
           <h2 className="section-title">Sobre mí</h2>
           <p><strong>Jhon Jairo Cortes Sarmiento</strong></p>
           <p>
-            Soy <strong>Desarrollador Web</strong>, con pasión por la construcción de interfaces
-            modernas, funcionales y con identidad propia. Me gusta convertir ideas en experiencias
-            digitales que la gente disfrute usar.
+            Soy <strong>Desarrollador Web</strong>, apasionado por la tecnología y el aprendizaje continuo. Me gusta enfrentar nuevos retos que me permitan crecer profesionalmente y aportar soluciones creativas. Me caracterizo por mi responsabilidad, compromiso y capacidad para trabajar en equipo, siempre buscando mejorar y compartir conocimientos
           </p>
           <p>
             Actualmente me encuentro buscando oportunidades donde pueda aportar mis habilidades
