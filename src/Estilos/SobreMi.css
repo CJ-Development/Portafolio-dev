@@ -1,0 +1,167 @@
+/* ===== SOBRE MÍ ===== */
+
+.sobre-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.sobre-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 60px;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .sobre-grid { grid-template-columns: 1fr; }
+  .sobre-avatar { display: flex; justify-content: center; }
+}
+
+.sobre-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sobre-texto p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.sobre-texto strong {
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.tag {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 5px 14px;
+  border-radius: 99px;
+  background: rgba(139, 177, 116, 0.12);
+  color: var(--accent);
+  border: 1px solid rgba(139, 177, 116, 0.3);
+}
+
+.avatar-circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: rgba(66, 107, 105, 0.3);
+  border: 3px solid rgba(139, 177, 116, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.avatar-circle span {
+  font-family: 'Agbalumo', cursive;
+  font-size: 2.8rem;
+  color: var(--accent);
+}
+
+/* ===== TIMELINE EDUCACIÓN ===== */
+.educacion-bloque {
+  scroll-margin-top: 70px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 28px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(139, 177, 116, 0.25);
+  border-radius: 99px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.timeline-item:last-child { padding-bottom: 0; }
+
+.timeline-dot {
+  position: absolute;
+  left: -25px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--bg-main);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.timeline-periodo {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.timeline-titulo {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.timeline-inst {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.timeline-desc {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* ===== TÍTULOS COMPARTIDOS ===== */
+.section-title {
+  font-family: 'Agbalumo', cursive;
+  font-size: 2.2rem;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+}

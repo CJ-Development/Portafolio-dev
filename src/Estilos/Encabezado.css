@@ -1,0 +1,78 @@
+/* ===== NAVBAR ===== */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Modo oscuro (default) */
+  background: rgba(34, 46, 80, 0.70);
+  backdrop-filter: blur(14px);
+
+  z-index: 100;
+  border-bottom: 1px solid rgba(139, 177, 116, 0.2);
+  transition: background 0.4s ease, border-color 0.4s ease;
+}
+
+/* Modo claro */
+.navbar--light {
+  background: rgba(245, 245, 245, 0.82);
+  border-bottom: 1px solid rgba(66, 107, 105, 0.2);
+}
+
+/* LOGO */
+.navbar-logo {
+  font-family: 'Agbalumo', cursive;
+  font-size: 1.25rem;
+  color: var(--accent);
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+/* LINKS */
+.navbar-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.navbar-links a {
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: var(--accent);
+  transition: width 0.3s;
+}
+
+.navbar-links a:hover::after { width: 100%; }
+.navbar-links a:hover { color: var(--accent); }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .navbar { padding: 10px 20px; gap: 12px; }
+  .navbar-links { gap: 14px; }
+  .navbar-links a { font-size: 0.78rem; }
+}
+
+@media (max-width: 560px) {
+  .navbar-links { display: none; }
+}

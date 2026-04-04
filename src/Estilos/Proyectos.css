@@ -1,0 +1,124 @@
+/* ===== PROYECTOS ===== */
+
+.proyectos-wrapper {
+  width: 100%;
+}
+
+.section-title {
+  font-family: 'Agbalumo', cursive;
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.section-subtitle {
+  font-family: 'Lato', sans-serif;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 48px;
+}
+
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* CARD */
+.card {
+  background: rgba(66, 107, 105, 0.25);
+  border: 1px solid rgba(139, 177, 116, 0.15);
+  border-radius: 16px;
+  padding: 28px 24px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(139, 177, 116, 0.4);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-icon {
+  font-size: 1.3rem;
+  color: var(--accent);
+}
+
+.card-title {
+  font-family: 'Agbalumo', cursive;
+  font-size: 1.3rem;
+  color: var(--text-main);
+}
+
+.card-desc {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 4px 12px;
+  border-radius: 99px;
+  background: rgba(139, 177, 116, 0.15);
+  color: var(--accent);
+  border: 1px solid rgba(139, 177, 116, 0.3);
+}
+
+.card-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.card-btn {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 99px;
+  background: var(--accent);
+  color: #222;
+  transition: 0.3s;
+}
+
+.card-btn:hover {
+  opacity: 0.85;
+  transform: scale(1.04);
+}
+
+.card-btn--ghost {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.card-btn--ghost:hover {
+  background: var(--accent);
+  color: #222;
+  opacity: 1;
+}
