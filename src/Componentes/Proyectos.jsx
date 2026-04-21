@@ -6,7 +6,7 @@ const proyectos = [
     nombre: 'IZEL',
     descripcion: 'Proyecto personal desarrollado de la forma más real posible, con el objetivo de ser implementado en una EPS real. Plataforma web que centraliza el agendamiento de citas, gestión de pacientes, doctores y horarios, con autenticación y control de acceso por roles',
     tecnologias: ['React', 'React Router DOM', 'CSS', 'Vite', 'JavaScript', 'Django', 'DRF', 'JWT', 'PostgreSQL', 'Cloudinary', 'Railway'],
-    link: 'https://izel-k8q089o2r-cj-developments-projects.vercel.app/',
+    link: 'https://izel-nine.vercel.app/',
   },
   {
     id: 2,
