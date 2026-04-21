@@ -4,10 +4,9 @@ const proyectos = [
   {
     id: 1,
     nombre: 'IZEL',
-    descripcion: 'Sistema médico para agendar citas. Gestión de pacientes, doctores y horarios en una sola plataforma.',
-    tecnologias: ['React', 'Node.js', 'MySQL'],
-    link: '#',
-    repo: '#',
+    descripcion: 'Proyecto personal desarrollado de la forma más real posible, con el objetivo de ser implementado en una EPS real. Plataforma web que centraliza el agendamiento de citas, gestión de pacientes, doctores y horarios, con autenticación y control de acceso por roles',
+    tecnologias: ['React', 'React Router DOM', 'CSS', 'Vite', 'JavaScript', 'Django', 'DRF', 'JWT', 'PostgreSQL', 'Cloudinary', 'Railway'],
+    link: 'https://izel-k8q089o2r-cj-developments-projects.vercel.app/',
   },
   {
     id: 2,
@@ -15,7 +14,6 @@ const proyectos = [
     descripcion: 'Proximamente proyecto colegios / Factus.',
     tecnologias: ['React', 'CSS'],
     link: '#',
-    repo: '#',
   },
 ];
 
