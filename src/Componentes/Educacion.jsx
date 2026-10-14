@@ -17,14 +17,6 @@ const educacion = [
     descripcion:
       'Formación en administración del talento humano, comunicación organizacional asertiva, resolución de conflictos y coordinación de equipos de trabajo.',
   },
-  {
-    institucion: 'Colegio I.E Compartir',
-    titulo: 'Bachiller Académico',
-    periodo: '2022 – 2022',
-    tipo: 'Educación Secundaria',
-    descripcion:
-      'Educación media académica con énfasis en competencias ciudadanas, habilidades comunicativas, pensamiento lógico y bases tecnológicas.',
-  },
 ];
 
 export default function Educacion() {

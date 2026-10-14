@@ -1,0 +1,40 @@
+# ==========================================
+# Robots.txt optimizado para IA y Buscadores
+# Dominio Oficial: https://jhoncortes.dev
+# ==========================================
+
+# Permitir a todos los bots de IA rastrear el portafolio completo
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Permitir a los buscadores tradicionales (Google, Bing)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Regla general: permitir a todos los demás bots
+User-agent: *
+Allow: /
+
+# Enlace directo al mapa del sitio para indexación rápida
+Sitemap: https://jhoncortes.dev/sitemap.xml
