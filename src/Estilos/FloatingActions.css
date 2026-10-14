@@ -1,0 +1,22 @@
+/* ═════════════════════════════════════════════════
+   CONTENEDOR DE BOTONES FLOTANTES
+═════════════════════════════════════════════════ */
+
+.floating-actions-wrapper {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 250;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+}
+
+@media (max-width: 480px) {
+  .floating-actions-wrapper {
+    bottom: 18px;
+    right: 18px;
+    gap: 10px;
+  }
+}

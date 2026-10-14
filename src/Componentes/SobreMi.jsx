@@ -1,74 +1,76 @@
 import '../Estilos/SobreMi.css';
 
-const educacion = [
-  {
-    institucion: 'SENA',
-    titulo: 'Tecnólogo en Análisis y Desarrollo de Software',
-    periodo: '2024 – 2026',
-    descripcion: 'Formación técnica en desarrollo de software, bases de datos, y metodologías ágiles.',
-  },
-  {
-    institucion: 'Autodidacta',
-    titulo: 'Desarrollo Frontend – React & Vite',
-    periodo: '2025 – Presente',
-    descripcion: 'Aprendizaje continuo en React, CSS avanzado, animaciones y buenas prácticas de UI/UX.',
-  },
-];
-
-const habilidades = [
-  'React', 'JavaScript', 'HTML5', 'CSS3',
-  'Vite', 'Git', 'MySQL', 'Node.js',
-];
-
 export default function SobreMi() {
   return (
     <div className="sobre-wrapper">
-
-      {/* SOBRE MÍ */}
       <div className="sobre-grid">
         <div className="sobre-texto">
+          <span className="badge-pill">Perfil Profesional</span>
           <h2 className="section-title">Sobre mí</h2>
-          <p><strong>Jhon Jairo Cortes Sarmiento</strong></p>
-          <p>
-            Soy <strong>Desarrollador Web</strong>, apasionado por la tecnología y el aprendizaje continuo. Me gusta enfrentar nuevos retos que me permitan crecer profesionalmente y aportar soluciones creativas. Me caracterizo por mi responsabilidad, compromiso y capacidad para trabajar en equipo, siempre buscando mejorar y compartir conocimientos
-          </p>
-          <p>
-            Actualmente me encuentro buscando oportunidades donde pueda aportar mis habilidades
-            y seguir creciendo profesionalmente en el mundo del desarrollo web.
-          </p>
-          <div className="habilidades">
-            {habilidades.map((h) => (
-              <span key={h} className="tag">{h}</span>
-            ))}
-          </div>
-        </div>
+          <h3 className="sobre-nombre">Jhon Jairo Cortes Sarmiento</h3>
+          <p className="sobre-rol">Desarrollador de Software · Full-Stack</p>
 
-        {/* FOTO */}
-        <div className="sobre-avatar">
-          <div className="avatar-circle">
-            <span>JC</span>
-          </div>
-        </div>
-      </div>
+          <p className="sobre-parrafo">
+            <strong>Tecnólogo en Análisis y Desarrollo de Software</strong> con experiencia en 
+            desarrollo web full-stack (Django, JavaScript, React), manejo de bases de datos relacionales 
+            y no relacionales (MySQL, MongoDB, Supabase, PostgreSQL) y control de versiones con Git.
+          </p>
 
-      {/* MI EDUCACIÓN */}
-      <div className="educacion-bloque" id="conocimientos">
-        <h2 className="section-title" style={{ marginBottom: '32px' }}>Mi Educación</h2>
-        <div className="timeline">
-          {educacion.map((item, i) => (
-            <div className="timeline-item" key={i}>
-              <div className="timeline-dot"></div>
-              <div className="timeline-content">
-                <span className="timeline-periodo">{item.periodo}</span>
-                <h3 className="timeline-titulo">{item.titulo}</h3>
-                <p className="timeline-inst">{item.institucion}</p>
-                <p className="timeline-desc">{item.descripcion}</p>
-              </div>
+          <p className="sobre-parrafo">
+            He participado en el desarrollo de aplicaciones funcionales bajo <strong>metodologías ágiles (Scrum)</strong>, 
+            aplicando buenas prácticas de calidad de código y pruebas unitarias. Me caracterizo por el compromiso 
+            con el aprendizaje continuo, la resolución efectiva de problemas y el trabajo en equipo.
+          </p>
+
+          {/* TARJETAS RÁPIDAS DE HIGHLIGHTS */}
+          <div className="sobre-highlights">
+            <div className="highlight-card">
+              <strong>Full-Stack</strong>
+              <p>Django, React & JavaScript</p>
             </div>
-          ))}
+
+            <div className="highlight-card">
+              <strong>Experiencia Real</strong>
+              <p>Chemonics International Inc.</p>
+            </div>
+
+            <div className="highlight-card">
+              <strong>Formación</strong>
+              <p>Tecnólogo SENA (ADSO)</p>
+            </div>
+
+            <div className="highlight-card">
+              <strong>Ubicación</strong>
+              <p>Soacha, Cundinamarca</p>
+            </div>
+          </div>
+
+          <div className="sobre-acciones">
+            <a href="#proyectos" className="sobre-btn sobre-btn--primario">
+              Ver Proyectos
+            </a>
+            <a href="#experiencia" className="sobre-btn sobre-btn--secundario">
+              Ver Experiencia
+            </a>
+            <a href="#contacto" className="sobre-btn sobre-btn--outline">
+              Contáctame
+            </a>
+          </div>
+        </div>
+
+        {/* AVATAR */}
+        <div className="sobre-avatar">
+          <div className="avatar-circle-wrapper">
+            <div className="avatar-circle">
+              <span>JC</span>
+            </div>
+            <div className="avatar-badge">
+              <span className="vibrant-green-dot"></span>
+              Disponible para proyectos
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
   );
 }

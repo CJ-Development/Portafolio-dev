@@ -4,18 +4,22 @@ import '../Estilos/BB8Toggle.css';
 export default function Encabezado({ darkMode, setDarkMode }) {
   return (
     <nav className={`navbar${darkMode ? '' : ' navbar--light'}`}>
-      <h2 className="navbar-logo">Jhon Cortes</h2>
+      <a href="#inicio" className="navbar-logo-link">
+        <h2 className="navbar-logo">Jhon Cortes</h2>
+      </a>
 
       <ul className="navbar-links">
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre_mi">Sobre Mi</a></li>
-        <li><a href="#conocimientos">Mi Educacion</a></li>
-        <li><a href="#proyectos">Mis Proyectos</a></li>
-        <li><a href="#contacto">Contactame</a></li>
+        <li><a href="#proyectos" className="nav-link-proyectos">Proyectos</a></li>
+        <li><a href="#sobre_mi">Sobre Mí</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#educacion">Educación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
 
       {/* checked=darkMode → estrellas cuando es oscuro, nubes cuando es claro */}
-      <label className="bb8-toggle">
+      <label className="bb8-toggle" title="Cambiar tema claro / oscuro" aria-label="Cambiar tema">
         <input
           className="bb8-toggle__checkbox"
           type="checkbox"

@@ -1,0 +1,78 @@
+/* ═════════════════════════════════════════════════
+   BOTÓN WHATSAPP FLOTANTE — From Uiverse.io by Gaurang7717
+   (Colores coordinados con la paleta de la web)
+═════════════════════════════════════════════════ */
+
+.whatsapp-float-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(139, 177, 116, 0.35);
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35), 0 0 12px rgba(37, 211, 102, 0.25);
+  background-color: #1e7e48;
+  text-decoration: none;
+}
+
+.whatsapp-float-btn .sign {
+  width: 100%;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-float-btn .sign svg {
+  width: 25px;
+  height: 25px;
+}
+
+.whatsapp-float-btn .sign svg path {
+  fill: #ffffff;
+}
+
+.whatsapp-float-btn .text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition-duration: 0.3s;
+  white-space: nowrap;
+}
+
+.whatsapp-float-btn:hover {
+  width: 155px;
+  border-radius: 40px;
+  transition-duration: 0.3s;
+  background-color: #25d366;
+  border-color: #25d366;
+  box-shadow: 0 6px 22px rgba(37, 211, 102, 0.45);
+}
+
+.whatsapp-float-btn:hover .sign {
+  width: 32%;
+  transition-duration: 0.3s;
+  padding-left: 10px;
+}
+
+.whatsapp-float-btn:hover .text {
+  opacity: 1;
+  width: 68%;
+  transition-duration: 0.3s;
+  padding-right: 14px;
+}
+
+.whatsapp-float-btn:active {
+  transform: translate(2px, 2px);
+}

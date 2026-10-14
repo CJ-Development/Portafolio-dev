@@ -1,54 +1,157 @@
-/* ═══════════════════════════════
-   BOTÓN FLOTANTE  —  descargar CV
-   Esquina inferior derecha
-═══════════════════════════════ */
-.cv-fab {
-  position: fixed;
-  bottom: 32px;
-  right: 32px;
-  z-index: 200;
+/* ═════════════════════════════════════════════════
+   BOTÓN DESCARGAR CV — From Uiverse.io by JkHuger
+   (Colores coordinados con la paleta de la web)
+═════════════════════════════════════════════════ */
 
+.installer {
+  position: relative;
+  width: 200px;
+  height: 42px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35), 0 0 12px rgba(139, 177, 116, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  border: 1px solid rgba(139, 177, 116, 0.35);
+}
+
+.installer:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent, #8bb174);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 16px rgba(139, 177, 116, 0.35);
+}
+
+.installer label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 42px;
+  width: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  display: block;
+}
+
+.installer label input {
+  display: none;
+}
+
+.installer label span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 42px;
+  width: 200px;
+  line-height: 42px;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2a4849 0%, #222e50 100%);
+  border-radius: 8px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.light .installer label span {
+  background: linear-gradient(135deg, #2e5553 0%, #2a4849 100%);
+}
+
+.installer label input:checked ~ span {
+  background: var(--accent, #8bb174);
+  color: #1a2a1a;
+  animation: downloadSuccess 3.1s ease;
+}
+
+.installer label span:after {
+  content: 'DESCARGAR CV';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
   display: flex;
   align-items: center;
-  gap: 8px;
-
-  background: var(--accent);
-  color: #1a2a1a;
-  font-family: 'Lato', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  padding: 12px 22px;
-  border-radius: 99px;
-
-  box-shadow: 0 4px 24px rgba(139, 177, 116, 0.35);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+  justify-content: center;
 }
 
-.cv-fab:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 32px rgba(139, 177, 116, 0.5);
+.installer label input:checked ~ span:after {
+  content: '¡DESCARGA LISTA!';
+  animation: downloadState 3s;
 }
 
-.cv-fab:active {
-  transform: scale(0.97);
+.installer label span:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  background: rgba(139, 177, 116, 0.35);
 }
 
-.cv-fab__icon {
-  font-size: 1rem;
-  line-height: 1;
+.installer label input:checked ~ span:before {
+  animation: downloadProgress 3s cubic-bezier(.67, .13, .1, .81);
 }
 
-/* solo mostrar el ícono  */
-@media (max-width: 480px) {
-  .cv-fab {
-    bottom: 20px;
-    right: 20px;
-    padding: 14px;
-    border-radius: 50%;
+@keyframes downloadSuccess {
+  0%, 88% {
+    background: #2a4849;
+    color: #ffffff;
   }
-  .cv-fab__label { display: none; }
+  100% {
+    background: #8bb174;
+    color: #1a2a1a;
+  }
+}
+
+@keyframes downloadState {
+  0%, 92% {
+    content: 'DESCARGANDO...';
+  }
+  100% {
+    content: '¡DESCARGA LISTA!';
+  }
+}
+
+@keyframes downloadProgress {
+  0% {
+    width: 5%;
+    opacity: 1;
+  }
+  35% {
+    width: 22%;
+  }
+  64% {
+    width: 55%;
+  }
+  81% {
+    width: 75%;
+  }
+  90% {
+    width: 90%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .installer {
+    width: 170px;
+    height: 38px;
+  }
+  .installer label,
+  .installer label span {
+    width: 170px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 0.78rem;
+  }
 }

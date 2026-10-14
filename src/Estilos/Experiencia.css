@@ -1,0 +1,213 @@
+/* ===== EXPERIENCIA LABORAL ===== */
+
+.experiencia-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.experiencia-header {
+  margin-bottom: 24px;
+}
+
+.experiencia-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* EXP CARD */
+.exp-card {
+  background: rgba(66, 107, 105, 0.22);
+  border: 1px solid rgba(139, 177, 116, 0.2);
+  border-radius: 20px;
+  padding: 34px 32px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.exp-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--accent) 0%, rgba(139, 177, 116, 0.2) 100%);
+  border-radius: 4px 0 0 4px;
+}
+
+.exp-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(139, 177, 116, 0.45);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+}
+
+.light .exp-card {
+  background: rgba(214, 226, 211, 0.4);
+  border-color: rgba(66, 107, 105, 0.25);
+}
+
+.light .exp-card:hover {
+  box-shadow: 0 12px 30px rgba(34, 46, 80, 0.1);
+}
+
+.exp-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.exp-info-principal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.exp-periodo-badge {
+  display: inline-flex;
+  align-self: flex-start;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.88rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(139, 177, 116, 0.15);
+  border: 1px solid rgba(139, 177, 116, 0.35);
+  padding: 5px 16px;
+  border-radius: 99px;
+}
+
+.exp-rol {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.exp-empresa {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.exp-tipo-tag {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 6px 16px;
+  border-radius: 99px;
+  white-space: nowrap;
+}
+
+.light .exp-tipo-tag {
+  background: rgba(66, 107, 105, 0.12);
+  border-color: rgba(66, 107, 105, 0.2);
+}
+
+.exp-divider {
+  height: 1px;
+  background: rgba(139, 177, 116, 0.15);
+  margin: 22px 0;
+}
+
+/* CONTENIDO */
+.exp-subtitulo {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+.exp-logros-lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+.exp-logro-item {
+  position: relative;
+  padding-left: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.08rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.exp-logro-item::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* TECNOLOGÍAS */
+.exp-tecnologias {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.exp-tec-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.exp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.exp-tag {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 6px 16px;
+  border-radius: 99px;
+  background: rgba(139, 177, 116, 0.14);
+  color: var(--accent);
+  border: 1px solid rgba(139, 177, 116, 0.28);
+  transition: all 0.2s ease;
+}
+
+.exp-tag:hover {
+  background: var(--accent);
+  color: #1b263b;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .exp-card {
+    padding: 24px 20px;
+  }
+  .exp-rol {
+    font-size: 1.3rem;
+  }
+}
