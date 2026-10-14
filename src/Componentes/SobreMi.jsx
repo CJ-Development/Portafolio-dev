@@ -8,7 +8,7 @@ export default function SobreMi() {
           <span className="badge-pill">Perfil Profesional</span>
           <h2 className="section-title">Sobre mí</h2>
           <h3 className="sobre-nombre">Jhon Jairo Cortes Sarmiento</h3>
-          <p className="sobre-rol">Desarrollador de Software · Full-Stack</p>
+          <p className="sobre-rol">Desarrollador de Software · Full-Stack · Freelance</p>
 
           <p className="sobre-parrafo">
             <strong>Tecnólogo en Análisis y Desarrollo de Software</strong> con experiencia en 
@@ -43,6 +43,11 @@ export default function SobreMi() {
               <strong>Ubicación</strong>
               <p>Soacha, Cundinamarca</p>
             </div>
+
+            <div className="highlight-card">
+              <strong>Freelance</strong>
+              <p>Disponible para proyectos</p>
+            </div>
           </div>
 
           <div className="sobre-acciones">
@@ -69,6 +74,17 @@ export default function SobreMi() {
               Disponible para proyectos
             </div>
           </div>
+
+          {/* Texto semántico SEO — accesible para crawlers */}
+          <p className="sr-only">
+            Jhon Jairo Cortes Sarmiento es un desarrollador de software freelance y programador
+            web disponible para crear páginas web profesionales, desarrollar aplicaciones web,
+            diseñar tiendas en línea y ofrecer servicios de consultoría de software. Como
+            freelancer con experiencia real en empresas como Chemonics International, ofrece
+            desarrollo de páginas web a medida, creación de sitios web, diseño web responsivo
+            y desarrollo de e-commerce en Colombia. Contáctalo para tu próximo proyecto de
+            desarrollo web o para contratar un programador freelance profesional.
+          </p>
         </div>
       </div>
     </div>

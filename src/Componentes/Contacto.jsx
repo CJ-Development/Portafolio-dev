@@ -59,7 +59,7 @@ export default function Contacto() {
       <div className="contacto-header">
         <h2 className="section-title">Contáctame</h2>
         <p className="section-subtitle">
-          ¿Tienes un proyecto en mente o buscas un desarrollador para tu equipo? Hablemos.
+          ¿Tienes un proyecto en mente, necesitas una página web profesional o buscas un desarrollador freelance para tu equipo? Hablemos.
         </p>
       </div>
 

@@ -146,7 +146,7 @@ export default function Proyectos() {
         <span className="badge-pill">Portafolio</span>
         <h2 className="section-title">Mis Proyectos</h2>
         <p className="section-subtitle">
-          Soluciones digitales de alto impacto: desde plataformas de e-commerce y salud hasta modernización y frontend a medida.
+          Proyectos reales de desarrollo web freelance: páginas web profesionales, plataformas de e-commerce, aplicaciones de salud y soluciones digitales a medida.
         </p>
       </div>
 
