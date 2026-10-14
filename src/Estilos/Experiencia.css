@@ -18,7 +18,7 @@
 
 /* EXP CARD */
 .exp-card {
-  background: rgba(66, 107, 105, 0.22);
+  background: rgba(30, 44, 76, 0.78);
   border: 1px solid rgba(139, 177, 116, 0.2);
   border-radius: 20px;
   padding: 34px 32px;
@@ -47,8 +47,9 @@
 }
 
 .light .exp-card {
-  background: rgba(214, 226, 211, 0.4);
-  border-color: rgba(66, 107, 105, 0.25);
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(66, 107, 105, 0.22);
+  box-shadow: 0 10px 25px rgba(34, 46, 80, 0.06);
 }
 
 .light .exp-card:hover {
