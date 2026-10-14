@@ -1,66 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Página principal: Portafolio de Desarrollador de Software Freelance -->
+    <!-- URL canónica principal del portafolio -->
     <url>
-        <loc>https://jhoncortes.dev</loc>
+        <loc>https://www.jhoncortes.dev/</loc>
         <lastmod>2026-10-14</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-    </url>
-
-    <!-- Sección: Inicio / Hero -->
-    <url>
-        <loc>https://jhoncortes.dev/#inicio</loc>
-        <lastmod>2026-10-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <!-- Sección: Sobre Mí - Perfil Profesional Freelance -->
-    <url>
-        <loc>https://jhoncortes.dev/#sobre_mi</loc>
-        <lastmod>2026-10-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Sección: Experiencia Laboral -->
-    <url>
-        <loc>https://jhoncortes.dev/#experiencia</loc>
-        <lastmod>2026-10-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- Sección: Habilidades Técnicas -->
-    <url>
-        <loc>https://jhoncortes.dev/#habilidades</loc>
-        <lastmod>2026-10-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- Sección: Educación y Formación -->
-    <url>
-        <loc>https://jhoncortes.dev/#educacion</loc>
-        <lastmod>2026-10-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <!-- Sección: Portafolio de Proyectos -->
-    <url>
-        <loc>https://jhoncortes.dev/#proyectos</loc>
-        <lastmod>2026-10-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <!-- Sección: Contacto y Contratación Freelance -->
-    <url>
-        <loc>https://jhoncortes.dev/#contacto</loc>
-        <lastmod>2026-10-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
     </url>
 </urlset>

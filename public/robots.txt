@@ -1,6 +1,6 @@
 # ==========================================
 # Robots.txt optimizado para IA y Buscadores
-# Dominio Oficial: https://jhoncortes.dev
+# Dominio Oficial: https://www.jhoncortes.dev
 # ==========================================
 
 # Permitir a todos los bots de IA rastrear el portafolio completo
@@ -37,4 +37,4 @@ User-agent: *
 Allow: /
 
 # Enlace directo al mapa del sitio para indexación rápida
-Sitemap: https://jhoncortes.dev/sitemap.xml
+Sitemap: https://www.jhoncortes.dev/sitemap.xml
